@@ -1,0 +1,20 @@
+<resources>
+    <color name="d_bg">#0C0A0B</color>
+    <color name="d_card">#1A1517</color>
+    <color name="d_chip">#271F22</color>
+    <color name="d_text">#F3EDED</color>
+    <color name="d_muted">#A89A9C</color>
+    <color name="d_brand">#C8202F</color>
+    <color name="d_warn">#3A1418</color>
+
+    <color name="l_bg">#F7F2F2</color>
+    <color name="l_card">#FFFFFF</color>
+    <color name="l_chip">#EDE1E1</color>
+    <color name="l_text">#1B1214</color>
+    <color name="l_muted">#6B5A5C</color>
+    <color name="l_brand">#A4161A</color>
+    <color name="l_warn">#FBE3E3</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="ic_bg">#0C0A0B</color>
+</resources>

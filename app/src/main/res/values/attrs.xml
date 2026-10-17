@@ -1,0 +1,8 @@
+<resources>
+    <attr name="cardColor" format="color" />
+    <attr name="chipColor" format="color" />
+    <attr name="mutedText" format="color" />
+    <attr name="mainText" format="color" />
+    <attr name="brand" format="color" />
+    <attr name="warnColor" format="color" />
+</resources>

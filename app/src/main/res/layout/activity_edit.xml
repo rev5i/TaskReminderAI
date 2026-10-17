@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/screenTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="مهمة جديدة"
+            android:textColor="?attr/mainText"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="المهمة"
+            android:textColor="?attr/mutedText"
+            android:textSize="13sp" />
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="مثال: ادرس الرياضيات"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:maxLength="80"
+            android:singleLine="true"
+            android:textColor="?attr/mainText"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="وقت التذكير"
+            android:textColor="?attr/mutedText"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/btnTime"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_card"
+            android:textColor="?attr/mainText"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="التكرار"
+            android:textColor="?attr/mutedText"
+            android:textSize="13sp" />
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbOnce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="مرة واحدة"
+                android:textColor="?attr/mainText" />
+
+            <RadioButton
+                android:id="@+id/rbDaily"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="كل يوم"
+                android:textColor="?attr/mainText" />
+
+            <RadioButton
+                android:id="@+id/rbDays"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="أيام محددة من الأسبوع"
+                android:textColor="?attr/mainText" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnDate"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:background="@drawable/bg_card"
+            android:textColor="?attr/mainText"
+            android:visibility="gone" />
+
+        <GridLayout
+            android:id="@+id/gridDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:visibility="gone" />
+
+        <Switch
+            android:id="@+id/swEnabled"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:checked="true"
+            android:text="تفعيل التذكير"
+            android:textColor="?attr/mainText" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/bg_fab"
+            android:text="حفظ"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="حذف المهمة"
+            android:textColor="?attr/brand"
+            android:visibility="gone" />
+    </LinearLayout>
+</ScrollView>
